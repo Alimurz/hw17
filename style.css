@@ -23,7 +23,7 @@ margin-top: 2%;
 font-size: xx-large;
 border-radius: 25px;
 }
-.JK{
+.Jokebox{
     display: flex;
     margin-top: 10%;
     justify-content: center;
@@ -33,47 +33,77 @@ border-radius: 25px;
 #gof{
     width: 300px;
 }
-#id{
+#data-id{
 font-size: medium;
 margin-top: 10px;
 }
-#type{
+#data-type{
 font-size: medium;
 margin: 20px 0;
 }
-#setup{
+#data-setup{
 font-size: xx-large;
 }
-#punchline{
+#data-punchline{
 font-size: x-large;
 margin: 20px 0;
 }
 
-#id::before{
+#data-id::before{
 content:'ID:';
 color: #555;
 font-size: small;
 }
-#type::before{
+#data-type::before{
 content: 'TYPE:';
 color: #555;
 font-size: small;
 }
-#setup::before{
+#data-setup::before{
     content: 'SETUP:';
     color: #555;
     font-size: x-large;
 }
-#punchline::before{
+#data-punchline::before{
     content: 'PUNCHLINE:'; 
     color: #555;
     font-size: large;
 }
-#loader{
-    
-    margin-top: 10px;
-    font-size: large;
-    font-weight: bold;
-}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 
